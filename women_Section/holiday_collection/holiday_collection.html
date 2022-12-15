@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="holiday_collection.css">
+    <style>
+        /* footer */
+
+#footer{
+    width: 100%;
+    background-color: #f0f1f2;
+    padding: 50px 6%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-family: serif;
+}
+#footer>div:nth-child(1){
+    width: 48%;
+    height: auto;
+}
+#top .left{
+    display: flex;
+    justify-content: space-between;
+}
+#top .left div{
+    width: 32%;
+}
+#top .left div p{
+    line-height: 1.5;
+}
+#top .left div p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* footer top right div */
+#footer>div:nth-child(2){
+    display: flex;
+    justify-content: right;
+    width: 48%;
+}
+#footer>div:nth-child(2) div{
+    width: 55%;
+}
+#footer>div:nth-child(2) div p{
+    line-height: 2;
+}
+#footer>div:nth-child(2) input{
+    width: 70%;
+    height: 30px;
+}
+#footer>div:nth-child(2) button{
+    height: 34px;
+    margin-left: -5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+/* bottom footer */
+#bottom{
+    background-color: #f0f1f2;
+}
+#bottom .handles-logo{
+    display: flex;
+    padding: 0 6%;
+} 
+#bottom .handles-logo img{
+    width: 22px;
+    margin: 8px;
+}
+#bottom .handles-logo img:hover{
+    cursor: pointer;
+}
+
+#bottom .india{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 6%;
+}
+#bottom .india:hover{
+    cursor: pointer;
+}
+#bottom .india img{
+    width: 50px;
+}
+    </style>
+    <title>holiday_collection | woman | Dress Code</title>
+</head>
+<body>
+    <div id="top_text">
+        <span>
+            The Holiday <br>
+            <span>Collection</span>
+        </span>
+    </div>
+    <div id="sortData">
+        <select id="sort_by_price">
+            <option value="">Sort By price</option>
+            <option value="LTH">price: low to high</option>
+            <option value="HTL">price: high to low</option>
+          </select>
+    </div>
+    <div id="container">
+        <!-- <div class="cards">
+            <img src="https://www.jcrew.com/s7-img-facade/BN102_YD2188_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0" alt="">
+            <p>title</p>
+            <p>price</p>
+        </div> -->
+    </div>
+
+    <!-- footer section -->
+    <div id="footer">
+        <div id="top">
+            <div class="left">
+                <div class="help">
+                    <h4>Help</h4>
+                    <p>Customer Service</p>
+                    <p>Track Order</p>
+                    <p>Returns & Exchanges</p>
+                    <p>Shipping</p>
+                    <p>International Orders</p>
+                    <p>Contact Us</p>
+                </div>
+
+                <div class="quick-links">
+                    <h4>Quick Links</h4>
+                    <p>Find a Store</p>
+                    <p>Size Charts</p>
+                    <p>Refer a Friend</p>
+                    <p>Offers & Promotions</p>
+                    <p>My Favorites</p>
+                </div>
+
+                <div class="about">
+                    <h4>About Dress Code</h4>
+                    <p>Our Story</p>
+                    <p>Careers</p>
+                    <p>Social Responsibility</p>
+                    <p>California Transparency Act/Modern Slavery Act</p>
+                    <p>Investor Relations</p>
+                    <p>Terms of Use</p>
+                    <p>Privacy Policy</p>
+                    <p>California Do Not Sell My Personal Information</p>
+                    <p>Diversity, Equity and Inclusion at Dress Code Group</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div>
+                <h4>Like Being First?</h4>
+                <p>Get can't-miss style news, before everybody else.</p>
+                <input type="email" placeholder="Enter your email">
+                <button id="footre-signup">SIGN UP</button>
+            </div>
+        </div>
+
+    </div>
+    <div id="bottom">
+        <div class="handles-logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxs1_Ed3-1ejDZSG9hHhQPzJXPMHEYdtGF-g&usqp=CAU" onclick="insta()" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRstEa20TDVTODSSpT7bkjBBi6LPKlFrH3-ew&usqp=CAU" onclick="fb()" alt="">
+            <img src="https://w7.pngwing.com/pngs/95/535/png-transparent-silhouette-computer-icons-twitter-twitter-logo-computer-wallpaper-monochrome-thumbnail.png" onclick="twitter()" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5QU-9OFyKMvQ2Wm7MJPVM99wDh2gWE1j5-w&usqp=CAU" onclick="linkedin()" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtYV3nzrpX3uK-bEWXPoUcezXOLLzNZRUWHQ&usqp=CAU" onclick="pinterest()"  alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTOsD_Jm_KUHpV7Ne5gL8peYktnh-QI9m7yQ&usqp=CAU" onclick="youTube()"  alt="">
+        </div>
+        <div class="india">
+            <p><u>India</u></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAsIOMcKuapXr0rf4vJWzEEt59PRE3OGCmcg&usqp=CAU" alt="">
+        </div>
+    </div>    
+</body>
+</html>
+<script src="holiday_collection.js"></script>

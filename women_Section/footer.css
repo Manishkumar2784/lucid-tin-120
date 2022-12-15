@@ -1,0 +1,84 @@
+/* footer */
+
+#footer{
+    width: 100%;
+    background-color: #f0f1f2;
+    padding: 50px 6%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-family: serif;
+}
+#footer>div:nth-child(1){
+    width: 48%;
+    height: auto;
+}
+#top .left{
+    display: flex;
+    justify-content: space-between;
+}
+#top .left div{
+    width: 32%;
+}
+#top .left div p{
+    line-height: 1.5;
+}
+#top .left div p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* footer top right div */
+#footer>div:nth-child(2){
+    display: flex;
+    justify-content: right;
+    width: 48%;
+}
+#footer>div:nth-child(2) div{
+    width: 55%;
+}
+#footer>div:nth-child(2) div p{
+    line-height: 2;
+}
+#footer>div:nth-child(2) input{
+    width: 70%;
+    height: 30px;
+}
+#footer>div:nth-child(2) button{
+    height: 34px;
+    margin-left: -5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+/* bottom footer */
+#bottom{
+    background-color: #f0f1f2;
+}
+#bottom .handles-logo{
+    display: flex;
+    padding: 0 6%;
+} 
+#bottom .handles-logo img{
+    width: 22px;
+    margin: 8px;
+}
+#bottom .handles-logo img:hover{
+    cursor: pointer;
+}
+
+#bottom .india{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 6%;
+}
+#bottom .india:hover{
+    cursor: pointer;
+}
+#bottom .india img{
+    width: 50px;
+}
