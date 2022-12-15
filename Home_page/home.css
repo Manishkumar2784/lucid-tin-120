@@ -1,0 +1,613 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.nav-wrapper{
+    display: flex;
+    text-align: center;
+    height: 60px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 0px 30px;
+}
+
+#nav-wrapper div{
+    /* border: 1px solid; */
+    height: 100%;
+    
+}
+
+#promo-header{
+    width: 100%;
+    height: 70px;
+    display: grid;
+    align-items: center;
+}
+
+#middle{
+    width: 65%;
+    display: flex;  
+    /* border: 1px solid green;   */
+    font-size: 15px;
+    font-weight: bolder;
+}
+#middle div{
+    display: flex;    
+    align-items: center;
+    margin-right: 30px;
+}
+#logo{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    width: 10%;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+}
+
+.right{
+  /* border: 1px solid red; */
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+}
+
+.log{
+  /* border: 1px solid red; */
+  display: grid;
+  align-items: center;
+}
+
+.right>div{
+  /* border: 1px solid blue;   */
+  display: flex;
+  align-items: center;
+}
+
+.sign, .bag{
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.sign:hover, .bag:hover{
+  cursor: pointer;
+}
+
+.rit>button:hover{
+  cursor: pointer;
+}
+
+
+.rit>input{
+  padding: 10px;
+  width: 180PX;
+}
+.rit button{
+  padding: 12px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+
+
+
+.container{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 600px;
+    display: grid;
+    text-align: center;
+
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .hero-image {
+    background-image: url("https://www.jcrew.com/brand_creative/homepage2022/15-Dec4/2022dec2_1213_hp_w_img0.jpg");
+    height: 600px;
+    background-size: cover;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .hero-text button {
+    border: none;
+    outline: 0;
+    /* display: flex; */
+    padding: 15px 50px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .hero-text h1{
+    font-size: 65px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .hero-text h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .hero-image:hover{
+    cursor: pointer;
+  }
+
+.trying {
+    background-image: url("https://www.jcrew.com/brand_creative/2022/202214-Dec2/skishop/v2/2022dec2_1213_w_ski_img4_new.jpg");
+    height: 600px;
+    background-size: cover;
+  } 
+  
+  .tryhard h3{
+    text-decoration: 2px underline;
+    text-underline-offset: 10px;
+    line-height: 1.8;
+    
+  }
+  .contain{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .tryhard {
+    text-align: center;
+    position: relative;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .trying1 {
+    background-image: url("https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img1_new.jpg");
+    height: 600px;
+    background-size: cover;
+  }
+
+  .trying2 {
+    background-image: url("https://www.jcrew.com/brand_creative/2022/202214-Dec2/flyout/2022dec2_1213_flyouts_w_img3.jpg");
+    height: 600px;
+    background-size: cover;
+  }
+
+  .trying3 {
+    background-image: url("https://www.jcrew.com/s7-img-facade/BD216_YD2415_m?fmt=jpeg&qlt=90,0&resMode=sharp&op_usm=.1,0,0,0&crop=0,0,0,0&wid=540&hei=540");
+    height: 600px;
+    background-size: cover;
+  }
+
+  .trying4 {
+    background-image: url("https://www.jcrew.com/brand_creative/2022/202214-Dec2/skishop/2022dec2_1213_w_ski_img1_new.jpg");
+    height: 600px;
+    background-size: cover;
+  }
+
+  .trying5 {
+    background-image: url("https://www.jcrew.com/brand_creative/2022/202213-Gift/partyshop/2029gifcyb_1129_w_partyshop_img2.jpg");
+    height: 600px;
+    background-size: cover;
+  }
+  
+  .tryhard>h1, .tryhard>h3{
+    color: white;
+  }
+
+  .tryhard>h3{
+    font-size: 16px;
+    margin-top: 10px;
+
+  }
+
+  .third{
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .third p{
+    font-size: 25px;
+    margin-right: 40px;
+  }
+
+  .third button{
+    padding: 15px 30px;
+    background-color: white;
+    border: none;
+    border: 1px solid black;
+    margin-right: 20px;
+  }
+
+
+  .third button:hover {
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+  }
+
+  .midcontainer{
+    padding-top: 40px;
+    padding-bottom: 100px;
+    background-color: rgb(248, 244, 239);
+  }
+
+  .one{
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: 55px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .two{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    border-top: 3px solid black;
+    
+  }
+
+  .two img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .two h5{
+    margin-top: 8px;
+  }
+
+  .two a{
+    color: black;
+    text-underline-offset: 10px;
+  }
+
+  .sor{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+
+  .three{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+    line-height: 1.4;
+    
+  }
+
+  .three img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .three h5{
+    margin-top: 8px;
+  }
+
+  .three a{
+    color: black;
+    text-underline-offset: 10px;
+  }
+
+  .inst{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: lighter;
+  }
+
+  .love{
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 10px;
+  }
+
+
+  .love img{
+    width: 100%;
+  }
+
+  * {box-sizing: border-box;}
+
+.cint {
+  position: relative;
+  /* width: 15%;
+  max-width: 300px; */
+}
+
+.cint:hover{
+    cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(255, 255, 255, 0.5); /* Black see-through */
+  /* color: #f1f1f1;  */
+  width: 100%;
+  /* height: 100%; */
+  transition: .5s ease;
+  opacity:0;
+  color: black;
+  font-size: 13px;
+  /* font-weight: bold; */
+  padding: 10px;
+  line-height: 1.4;
+
+}
+
+.cint:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.insta{
+    text-align: center;
+    margin-top: 120px;
+    font-weight: lighter;
+}
+
+.overlay>span{
+    font-weight: bold;
+}
+
+.rd{
+    color: red;
+}
+
+.insta+h3{
+    font-weight: lighter;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.almost{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 40px;
+    margin-top: 20px;
+}
+
+.almost img{
+    width: 100%;
+}
+
+.over{
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.5); /* Black see-through */
+    /* color: #f1f1f1;  */
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    line-height: 1.8    ;
+
+  }
+  
+  .cont:hover .over {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .cont {
+    position: relative;
+    /* width: 15%;
+    max-width: 300px; */
+  }
+  
+  .cont:hover{
+      cursor: pointer;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+
+  .more{
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .last{
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 10px;
+  }
+
+  .last img{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .last h5{
+    text-align: center;
+    text-decoration:2px underline;
+    text-underline-offset: 10px;
+    font-size: 11.90px;
+  }
+
+  .end img{
+    width: 1.5%;
+  }
+  
+  .end{
+    border-top: 1px solid lightgrey;
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .end p{
+    margin-left: 10px;
+    margin-right: 40px;
+  }
+
+  .end>p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-underline-offset: 5px;
+  }
+
+  .last>div:hover{
+    cursor: pointer;
+  }
+
+img:hover{
+    cursor: pointer;
+}
+
+.foot{
+
+background-color: rgb(240, 241, 242);
+
+  
+}
+
+.feet{
+  /* margin-top: 20px; */
+  padding: 50px 50px 50px 50px;
+}
+  
+.foot1{
+  display: flex;
+  /* border: 1px solid; */
+  justify-content: space-between;
+}
+
+.leftfoot{
+  display: flex;
+  /* border: 1px solid green; */
+  width: 50%;
+  justify-content: space-between;
+}
+
+.rightfoot{
+  /* border: 1px solid green; */
+  line-height: 1.8;
+
+}
+
+.leftfoot ul{
+  /* border: 1px solid blue; */
+  width: 32%;
+}
+
+.foot li{
+  list-style: none;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.rightfoot input{
+  padding: 10px;
+  width: 280px;
+}
+
+.rightfoot button{
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-weight: bolder;
+}
+
+.foot2 img{
+  width: 2%;
+  margin-right: 20px;
+}
+
+.foot2{
+  margin-top: 40px;
+}
+
+.ind{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.ind a{
+  color: black;
+  font-size: 14px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.social:hover{
+  cursor: pointer;
+}
