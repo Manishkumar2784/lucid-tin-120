@@ -1,0 +1,61 @@
+*{
+    /* font-family: freight-big-pro,Times New Roman,Times,serif; */
+    margin: 0;
+    padding: 0;
+}
+#top_text{
+    padding: 20px;
+    text-align: center;
+}
+#top_text span{
+    font-size: 50px;
+}
+#top_text span span{
+    font-size: 80px;
+}
+#sortData{
+    width: 90%;
+    margin: auto;
+}
+#sortData #sort_by_price{
+    height: 40px;
+    width: 220px;
+    font-size: 18px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+#container{
+    display: grid;
+    width: 90%;
+    margin: 20px auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+}
+#container .cards{
+    padding: 10px;
+}
+#container .cards:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container .cards img{
+    width: 100%;
+}
+#container .cards p{
+    line-height: 2;
+}
+#container .cards p:nth-child(3){
+    color: red;
+}
+.cards button{
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: grey;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+.cards button:hover{
+    background-color: black;
+}
