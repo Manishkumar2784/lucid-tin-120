@@ -1,5 +1,6 @@
 
 let cont = document.querySelector("#container")
+let logo = document.querySelector("#logo")
 
 async function holiday_deals(){
     try {
@@ -54,12 +55,13 @@ function renderData(data){
     for(button of product_cards){
         button.addEventListener("click",(event)=>{
             let id = event.target.dataset.id;
-            // window.location.href = `./product_pages/holiday${id}.html`
+
             fetch(`https://fair-rose-bluefish-cuff.cyclic.app/woman-holiday-products/${id}`)
             .then(res => res.json())
             .then(data => {
                 cartItem.push(data)
                 localStorage.setItem("cart-products",JSON.stringify(cartItem))
+                alert(`Hurray ! ${data.title} Added to cart`)
             })
             .catch(err => alert(err))
         })
@@ -119,3 +121,8 @@ function insta() {
     let url = "https://www.jcrew.com/in/r/context-chooser";
     window.open(url, "_blank")
   })
+
+//   go to home page through logo
+// logo.addEventListener("click",()=>{
+//     window.location.href = "../Home_page/homepage.html"
+// })

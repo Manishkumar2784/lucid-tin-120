@@ -3,6 +3,7 @@ let shopStory = document.querySelector("#shops_story_cards");
 let moreNeed = document.querySelector("#more_need_cards");
 let countryLogo = document.querySelector(".india")
 let holiday_collection = document.querySelector("#holiday_collection");
+let logo = document.querySelector("#logo")
 
 // fetch recomended products data
 async function recomended_products() {
@@ -14,7 +15,7 @@ async function recomended_products() {
       obj.title = "";
       return obj;
     })
-    Render_Recom_Data(massagedData)
+    Render_Recom_Data(massagedData,"recomClass")
   } catch (error) {
     alert("Bad request")
   }
@@ -28,7 +29,7 @@ async function shop_story_products() {
     let shop_request = await fetch("https://fair-rose-bluefish-cuff.cyclic.app/woman-shops_story")
     if (shop_request.ok) {
       let res = await shop_request.json();
-      Render_shopStory_Data(res)
+      Render_shopStory_Data(res,"shopClass")
     }else{
       alert("something went wrong")
     }
@@ -46,7 +47,7 @@ async function more_need_products() {
     let needed_request = await fetch("https://fair-rose-bluefish-cuff.cyclic.app/woman-more_need")
     if(needed_request.ok){
       let res = await needed_request.json();
-      Render_moreNeed_Data(res)
+      Render_moreNeed_Data(res,"needMoreClass")
     }else{
       alert("something went wrong")
     }
@@ -58,10 +59,10 @@ more_need_products()
 
 
 // function to get product in Card Form
-function get_products_As_card(data) {
+function get_products_As_card(data,cls="") {
   return `
-    <div>
-        <img src="${data.imgURL}" alt="">
+    <div class = "${cls}">
+        <img  data-id="${data.id}" src="${data.imgURL}" alt="">
         <h4>${data.title}</h4>
     </div>
     
@@ -69,13 +70,22 @@ function get_products_As_card(data) {
 }
 
 // recomanded data render function
-function Render_Recom_Data(data) {
+function Render_Recom_Data(data,cls) {
   recom_cards.innerHTML = "";
   let newRecomArr = data.map((item) => {
-    return get_products_As_card(item)
+    return get_products_As_card(item,cls)
   })
 
-  recom_cards.innerHTML = newRecomArr.join("");
+  recom_cards.innerHTML = newRecomArr.join("");   // Rendered
+
+  let recomDetails = document.querySelectorAll(".recomClass");
+  for(let recomDetail of recomDetails){
+    
+    recomDetail.addEventListener("click",(event)=>{
+      let id = event.target.dataset.id;
+      window.location.href = `recomanded${id}.html`
+    })
+  }
 }
 
 // shop story render function
@@ -138,4 +148,9 @@ countryLogo.addEventListener("click", () => {
 // holiday collection
 holiday_collection.addEventListener("click", () => {
   window.location.href = "holiday_collection/holiday_collection.html";
+})
+
+// go to home page through logo
+logo.addEventListener("click",()=>{
+  window.location.href = "../Home_page/homepage.html"
 })
