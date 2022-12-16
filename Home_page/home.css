@@ -41,6 +41,10 @@ button:hover{
     align-items: center;
     margin-right: 30px;
 }
+#middle div>a{
+  text-decoration: none;
+  color: black;
+}
 #logo{
     display: flex;
     align-items: center;

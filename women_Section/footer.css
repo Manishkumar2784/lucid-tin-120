@@ -35,6 +35,7 @@
     width: 48%;
 }
 #footer>div:nth-child(2) div{
+    display: block;
     width: 55%;
 }
 #footer>div:nth-child(2) div p{
