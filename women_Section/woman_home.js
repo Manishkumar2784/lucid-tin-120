@@ -89,20 +89,28 @@ function Render_Recom_Data(data,cls) {
 }
 
 // shop story render function
-function Render_shopStory_Data(data) {
+function Render_shopStory_Data(data,cls) {
   shopStory.innerHTML = "";
   let newShopStoryArr = data.map((item) => {
-    return get_products_As_card(item)
+    return get_products_As_card(item,cls)
   })
 
   shopStory.innerHTML = newShopStoryArr.join("");
+
+  let storyShops = document.querySelectorAll(".shopClass");
+  for(let shop of storyShops){
+    shop.addEventListener("click",(event)=>{
+      window.location.href = `./shop_story/shopStory1.html`;
+    })
+  }
+
 }
 
 // more_need data render function
-function Render_moreNeed_Data(data) {
+function Render_moreNeed_Data(data,cls) {
   moreNeed.innerHTML = "";
   let newmoreNeedArr = data.map((item) => {
-    return get_products_As_card(item)
+    return get_products_As_card(item,cls)
   })
 
   moreNeed.innerHTML = newmoreNeedArr.join("");
