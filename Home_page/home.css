@@ -3,6 +3,9 @@
     padding: 0px;
 }
 
+
+
+
 button:hover{
   cursor: pointer;
 }
@@ -127,7 +130,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; */
   }
   
   .hero-text button {
@@ -135,8 +138,7 @@ body, html {
     outline: 0;
     /* display: flex; */
     padding: 15px 50px;
-    color: black;
-    background-color: white;
+    /* background-color: black; */
     text-align: center;
     cursor: pointer;
     margin-left: 50px;
@@ -610,4 +612,76 @@ background-color: rgb(240, 241, 242);
 
 .social:hover{
   cursor: pointer;
+}
+
+.navbar {
+  overflow: hidden;
+  width: 60%;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnavbtn {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bolder;
+  margin-left: 25px;
+
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  
+  text-decoration: underline;
+  text-underline-offset: 19px;
+
+}
+
+.navbar a:hover, .subnav:hover #subnavbtn {
+  
+  text-decoration: underline red;
+
+  text-underline-offset: 19px;
+
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  overflow: scroll;
+}
+
+.subnav:hover .subnav-content {
+  display: grid;
+}
+
+.subnav-cont {
+  /* display: none; */
+  position: absolute;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+.subnav:hover .subnav-cont {
+  display: grid;
+  
+}
+
+.navbar li, .navbar p{
+  list-style: none;
+  text-align: left;
+}
+
+.navbar p{
+  margin-bottom: 20px;
 }

@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .navbar a {
+    font-size: 12px;
+    padding: 14px 16px;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    padding: 16px;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    
+    text-decoration: underline;
+    text-underline-offset: 19px;
+
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: grid;
+  }
+
+  .subnav-cont{
+    display: none;
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    width: 10%;
+    /* padding: 20px; */
+  }
+
+
+
+  .subnav:hover .subnav-cont{
+    display: block;
+  }

@@ -19,17 +19,61 @@
                     <img width="100%"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAABfCAYAAADGdpEZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAABE/SURBVHhe7d0HcFRFGAfwDWjUKDas2HtDxI4NUUCx9zIW1LGgqDiiKBYcS5So0bGgoqjoWAYrKnaxYB0bKINYsTvGgqIiYoHn/fe+jXt3+96927vcbeT/m9nhba4kJHf3vf2+3X11DQ0N0axZsxQREVFa9fX1qoMcExERlYQBhIiIvOSksKIo0v8SERG51NXV6X+ZwiIiIm8MIERE5IUBhIiIvDCAEBGRl1RF9BkzZsgRUe117NhRderUSXpEVE12Eb1oAJk7d65+wxKFonv37mrSpEnSI6Jq4iwsIiIqGwMIERF5YQAhIiIvDCBEROSFAYSIiLwwgBARkRcGECIi8sIAQkREXhhAiIjICwMIERF5YQAhIiIvDCBEROSFAYSIiLwwgBARkRcGECIi8sIAQkREXhhAiIjICwMIERF5YQAhIiIvDCBEROSFAYSoTM3NzWqhhRbKadtvv73c6rbnnnsWPGbYsGFyK1H7wABCVKY5c+ao2bNn57S//vpLbnX7+++/Cx7zzz//yK1E7QMDCBERealraGiIZs2apTtRFOl/bXPnzlUdO3aUnp811lhDLb744tKLh7Oyzz77TP3222/yFT/29/vxxx/VF198oY+rob6+Xm244YbSU2rixInO32slLbzwwqp3796qa9euarnlllPLLruswt90+vTpaurUqerll19WH330kdzbX7m/V/x8CyywgD7Gz/b555/r41J1795dTZo0SXq1d+mll6qhQ4dKL6tHjx7qtddek16hXXbZRT355JPSy8JzDB8+XHpt57333lMzZ86UXqH1119fderUSXpu77//vvr111+ll6tLly5qpZVWkp4bXj/Tpk2TXiG8hldddVV9/M0336ivv/5aH7tssskmav7555deocmTJ6s//vhDerkWXXRRtd5660nvP0n/vwUXXFBttNFG0lPq22+/VV9++aX0Km+LLbZQdXV10lPq9ddfl6PybLnllnJUGvOz4LNOIYBkjnVzyQzPW2/3bWPHjpVnSyfzB4lefPHF6Igjjog6dOjgfM6kZn+/UaNGOe/TVq1///7ynbP69u3rvF8lWuZD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" alt=""></div>    
             </div>
 
-            <div  id="middle">
-                <div style="margin-left: 30px;">Gifts</div>
-                <div>New</div>
-                <div>Women</div>
-                <div>Men</div>
-                <div>Kids</div>
-                <div>Cashmere</div>
-                <div>Home</div>
-                <div>Stories</div>
-                <div>Sale</div>
-            </div> 
+                <div class="navbar">
+                    <div class="subnav">
+                      <div id="subnavbtn" class="subnavbtn">Gifts</div>
+                      <div class="subnav-cont">
+                          <p >Gifts</p>
+                          <ul>
+                            <li>For Women</li>
+                            <li>For Men</li>
+                            <li>For Boys</li>
+                            <li>For Girls</li>
+                            <li>For the Home</li>
+                          </ul>
+                      </div>
+                    </div> 
+                    <div class="subnav">
+                      <div class="subnavbtn">New</div>
+                      <div class="subnav-content">
+                      </div>
+                    </div> 
+                    <div class="subnav">
+                      <div class="subnavbtn">Women</div>
+                      <div class="subnav-content">
+                      </div>
+                    </div>
+                    <div class="subnav">
+                        <div class="subnavbtn">Men</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                      <div class="subnav">
+                        <div class="subnavbtn">Kids</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                      <div class="subnav">
+                        <div class="subnavbtn">Cashmere</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                      <div class="subnav">
+                        <div class="subnavbtn">Home</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                      <div class="subnav">
+                        <div class="subnavbtn">Stories</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                      <div class="subnav">
+                        <div id="subnavbtn" class="subnavbtn">Sale</div>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
+                </div>
 
             <div class="right">
                 <div class="rit">
