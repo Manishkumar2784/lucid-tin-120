@@ -44,7 +44,7 @@
                       </div>
                     </div> 
                     <div class="subnav">
-                      <div class="subnavbtn"><a href="../women_Section/woman_home.html">Women</a></div>
+                      <div id="womenpag" class="subnavbtn"><a id="womenpage" href="../lucid-tin-120/women_Section/woman_home.html">Women</a></div>
                       <div class="subnav-content">
                       </div>
                     </div>
@@ -85,8 +85,8 @@
                     <input type="text" placeholder="BLACK || WHITE..."><button>Search</button>       
                 </div>
                 <div class="sign">Sign In</div>
-                <div  class="bag">
-                    <a href="../Cart/cart.html">Cart</a>
+                <div id="cartpage" class="bag">
+                    <a id="cartpage" href="../lucid-tin-120/Cart/cart.html">Cart</a>
                 </div>
             </div>
        
@@ -390,3 +390,24 @@
 
 </body>
 </html>
+
+<script>
+    let trick = document.querySelector("#womenpage");
+    trick.addEventListener("click",()=>{
+        window.location.href = "../lucid-tin-120/women_Section/woman_home.html"
+    })
+
+    let tric = document.querySelector("#womenpag");
+    tric.addEventListener("click",()=>{
+        window.location.href = "../lucid-tin-120/women_Section/woman_home.html"
+    })
+
+    let tri = document.querySelector("#cartpage");
+    tri.addEventListener("click",()=>{
+        window.location.href = "../lucid-tin-120/Cart/cart.html"
+    })
+
+    
+
+    
+</script>
