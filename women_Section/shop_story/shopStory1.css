@@ -77,6 +77,7 @@
 }
 #container .cards{
     padding: 10px;
+    cursor: pointer;
 }
 #container .cards:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -102,4 +103,14 @@
 }
 .cards button:hover{
     background-color: black;
+}
+.bag a,.sign a{
+    text-decoration: none;
+    color: black;
+}
+#middle div{
+    cursor: pointer;
+}
+#logo{
+    cursor: pointer;
 }

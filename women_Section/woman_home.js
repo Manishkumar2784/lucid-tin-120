@@ -160,5 +160,5 @@ holiday_collection.addEventListener("click", () => {
 
 // go to home page through logo
 logo.addEventListener("click",()=>{
-  window.location.href = "../Home_page/homepage.html"
+  window.location.href = "../index.html"
 })

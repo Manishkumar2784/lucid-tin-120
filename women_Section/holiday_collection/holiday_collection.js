@@ -123,6 +123,6 @@ function insta() {
   })
 
 //   go to home page through logo
-// logo.addEventListener("click",()=>{
-//     window.location.href = "../Home_page/homepage.html"
-// })
+logo.addEventListener("click",()=>{
+    window.location.href = "../../index.html"
+})
