@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Signup || BLACK || WHITE</title>
     
+
     <link rel="stylesheet" href="./login.css" />
   </head>
   <body>
@@ -22,7 +24,13 @@
       </div> -->
       <div id="box2">
         <p><b>Sign Up</b></p>
-        <input type="text" id="name" placeholder="Full name" />
+        <!-- <input type="text" id="name" placeholder="Full name" /> -->
+        <select name="" id="name" aria-placeholder="Country Name">
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="America">America</option>
+          <option value="Russia">Russia</option>
+        </select>
         <input type="email" id="email" placeholder="Email Address" />
         <input type="password" id="pass" placeholder="Create Password" />
         <button id="signup" onclick="signup()">CREATE AN ACCOUNT</button>
