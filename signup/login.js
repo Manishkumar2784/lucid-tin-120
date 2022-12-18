@@ -23,3 +23,8 @@ let checkUser = (e) => {
     return false;
   }
 };
+
+let logo = document.querySelector("#logo")
+logo.addEventListener("click",()=>{
+  window.location.href = "../index.html"
+})

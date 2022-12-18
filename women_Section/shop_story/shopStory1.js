@@ -81,3 +81,7 @@ function get_products_As_card(data){
     
     `
 }
+
+logo.addEventListener("click",()=>{
+  window.location.href = "../../index.html"
+})

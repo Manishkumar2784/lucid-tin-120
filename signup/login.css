@@ -112,3 +112,10 @@ input {
   line-height: 13px;
   font-size: 13px;
 }
+
+#logo{
+  cursor: pointer;
+}
+.sign{
+  visibility: hidden;
+}
