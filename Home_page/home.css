@@ -134,7 +134,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* color: white; */
+    color: white;
   }
   
   .hero-text button {
@@ -642,7 +642,7 @@ background-color: rgb(240, 241, 242);
 .navbar a:hover, .subnav:hover .subnavbtn {
   
   text-decoration: underline;
-  text-underline-offset: 19px;
+  text-underline-offset: 24px;
 
 }
 
@@ -650,8 +650,13 @@ background-color: rgb(240, 241, 242);
   
   text-decoration: underline red;
 
-  text-underline-offset: 19px;
+  text-underline-offset: 24px;
 
+}
+
+.subnav a{
+  text-decoration: none;
+  color: black;
 }
 
 .subnav-content {
@@ -664,11 +669,11 @@ background-color: rgb(240, 241, 242);
 }
 
 .subnav:hover .subnav-content {
-  display: grid;
+  display: none;
 }
 
 .subnav-cont {
-  /* display: none; */
+  display: none;
   position: absolute;
   left: 0;
   background-color: black;
@@ -677,7 +682,7 @@ background-color: rgb(240, 241, 242);
 }
 
 .subnav:hover .subnav-cont {
-  display: grid;
+  display: none;
   
 }
 
