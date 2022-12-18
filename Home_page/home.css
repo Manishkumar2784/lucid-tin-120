@@ -134,7 +134,7 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    /* color: white; */
   }
   
   .hero-text button {
@@ -643,7 +643,12 @@ background-color: rgb(240, 241, 242);
   
   text-decoration: underline;
   text-underline-offset: 24px;
+  cursor: pointer;
 
+}
+
+.subnav:hover{
+  cursor: pointer;
 }
 
 .navbar a:hover, .subnav:hover #subnavbtn {
@@ -651,12 +656,8 @@ background-color: rgb(240, 241, 242);
   text-decoration: underline red;
 
   text-underline-offset: 24px;
+  cursor: pointer;
 
-}
-
-.subnav a{
-  text-decoration: none;
-  color: black;
 }
 
 .subnav-content {
