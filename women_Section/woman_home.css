@@ -129,6 +129,10 @@ color: grey;
 #contact div img,#contact div p{
     margin: 0 5px;
 }
+.sign a,.bag a{
+    text-decoration: none;
+    color: black;
+}
 
 
 

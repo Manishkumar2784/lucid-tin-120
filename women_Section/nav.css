@@ -124,3 +124,7 @@ button:hover {
   background-color: black;
   color: white;
 }
+.sign a,.bag a{
+  text-decoration: none;
+  color: black;
+}
