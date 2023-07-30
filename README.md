@@ -27,12 +27,8 @@ The Frontend of the BLACK || WHITE e-commerce website is skillfully crafted usin
 ---
 ## Features
 - **User Signup and Login**
-- **Property Listing:** Hosts can add their properties to the app, including essential information such as property type, location, amenities, pricing, and availability.
-
 - **Price Sorting**
-
 - **Extensive Product Catalog**
-
 - **Easy Navigation**
 
 ## Live Demo
